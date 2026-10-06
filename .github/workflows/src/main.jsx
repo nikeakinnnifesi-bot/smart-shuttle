@@ -171,6 +171,9 @@ function App() {
 
   if (!session) {
     return (
+      if (profile?.role === "admin") {
+  return <AdminDashboard supabase={supabase} />;
+    }
       <div className="center">
         <form className="card auth-card" onSubmit={handleAuth}>
           <div className="logo-circle">🚌</div>
