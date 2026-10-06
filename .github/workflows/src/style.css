@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7f5;
+  color: #172033;
+}
+
+header {
+  background: #0b5d3b;
+  color: white;
+  padding: 16px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header strong {
+  font-size: 20px;
+}
+
+main {
+  width: min(900px, 94%);
+  margin: auto;
+  padding: 25px 0 50px;
+}
+
+.center {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 22px;
+  margin: 15px 0;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+}
+
+.auth-card {
+  width: min(420px, 94vw);
+  text-align: center;
+}
+
+.logo-circle {
+  font-size: 45px;
+}
+
+.hero {
+  background: #0b5d3b;
+  color: white;
+  border-radius: 18px;
+  padding: 30px 24px;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border: 1px solid #ccd3dd;
+  border-radius: 9px;
+  font-size: 16px;
+  background: white;
+}
+
+button {
+  padding: 13px 18px;
+  border: none;
+  border-radius: 9px;
+  background: #0b5d3b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+.auth-card > button {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.link-button {
+  background: transparent;
+  color: #0b5d3b;
+}
+
+.logout-button {
+  background: white;
+  color: #0b5d3b;
+}
+
+.shuttle-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.seats {
+  font-weight: bold;
+  color: #0b5d3b;
+}
+
+.message {
+  background: #eaf5ee;
+  color: #164b31;
+  padding: 13px;
+  border-radius: 9px;
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  .shuttle-card {
+    display: block;
+  }
+
+  .shuttle-card button {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  header {
+    padding: 14px;
+  }
+}
