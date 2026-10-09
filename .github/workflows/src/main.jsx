@@ -213,6 +213,7 @@ function App() {
       </div>
     );
   }
+
 if (profile?.role === "admin") {
   return <AdminDashboard supabase={supabase} />;
 }
