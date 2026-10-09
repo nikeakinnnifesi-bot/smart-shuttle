@@ -168,12 +168,6 @@ function App() {
   if (loading) {
     return <div className="center">Loading Smart Shuttle...</div>;
   }
-
-  if (!session) {
-    return (
-      if (profile?.role === "admin") {
-  return <AdminDashboard supabase={supabase} />;
-    }
       <div className="center">
         <form className="card auth-card" onSubmit={handleAuth}>
           <div className="logo-circle">🚌</div>
