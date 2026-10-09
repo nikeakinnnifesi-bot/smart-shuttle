@@ -168,6 +168,8 @@ function App() {
   if (loading) {
     return <div className="center">Loading Smart Shuttle...</div>;
   }
+  if (!session) {
+  return (
       <div className="center">
         <form className="card auth-card" onSubmit={handleAuth}>
           <div className="logo-circle">🚌</div>
